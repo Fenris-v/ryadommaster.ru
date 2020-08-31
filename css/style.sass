@@ -1,0 +1,453 @@
+@import "variables"
+@import "prefixes"
+/* RESET */
+@import "normalize"
+
+body
+  overflow-x: hidden
+
+.wrapper
+  max-width: 1200px
+  margin: 0 auto
+  padding: 0 30px
+  @include box-sizing()
+
+/* HEADER */
+.header
+  &_top
+    padding: 20px 0 10px
+    @include box-sizing()
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  &__logo
+    width: 200px
+
+  &__title
+    @include font($green, $bold, bold, 20px, 1.5)
+    max-width: 350px
+    text-align: center
+
+  &__contacts
+    text-align: right
+
+    .phone
+      @include font($textBlack, $arial, bold, 20px, 1.5)
+      text-decoration: none
+
+    p
+      @include font($textBlack, $regular, normal, 16px, 1.5)
+      margin: 0
+
+    .header__city
+      @include font($green, $regular, normal, 16px, 1.55)
+
+  &_bottom
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 10px 0
+    @include box-sizing()
+
+    &__wrapper
+      background: $yellow
+
+  &__nav
+    display: flex
+    align-items: center
+    list-style: none
+    margin: 0
+    padding: 0
+
+    a
+      text-decoration: none
+      @include font($white, $regular, normal, $fontSize, 1.55)
+      padding: 5px 10px
+      margin-right: 30px
+      @include transition()
+
+      &:hover
+        color: $purple
+        @include transition()
+
+.btn
+  position: relative
+  display: inline-block
+  @include font($white, $regular, normal, $fontSize, 1)
+  padding: 13px 30px
+  text-decoration: none
+  overflow: hidden
+
+  &_outline
+    @include border-radius(25px)
+    border: 1px solid $white
+    @include transition()
+
+    &:hover
+      background: $red
+      border-color: $red
+      @include transition()
+
+/* FOOTER */
+.s_footer
+  background: $yellow
+
+.footer
+  padding: 70px 0
+  display: flex
+
+  &__column
+    margin-right: 50px
+
+  &__mail
+    @include font($white, $bold, bold, 20px)
+    text-decoration: none
+
+    &:hover
+      text-decoration: underline
+
+  &__social
+    padding-top: 20px
+    display: flex
+    margin-bottom: 10px
+
+    a
+      margin-right: 10px
+      width: 25px
+      @include transition()
+
+      &:hover
+        @include transform(scale(1.3))
+        @include transition()
+
+      svg
+        width: 100%
+
+  &__company
+    @include font($white, $regular, normal, 12px, 1.55)
+
+  &__nav
+    list-style: none
+    margin: 0
+    padding: 0
+
+    li
+      margin-bottom: 10px
+
+    a
+      text-decoration: none
+      @include font($white, $bold, bold, $fontSize, 1.55)
+
+      &:hover
+        text-decoration: underline
+
+/* MAIN PAGE */
+.s_firstScreen
+  background: $greenBg
+  position: relative
+  overflow: hidden
+
+.innerTitle
+  margin-top: 0
+  @include font($white, $bold, bold, 54px)
+  margin-bottom: 40px
+
+.firstScreen
+  padding: 70px 0
+  position: relative
+
+  &_static
+    position: relative
+    z-index: 1
+    max-width: 450px
+
+  &__options
+    margin-bottom: 60px
+
+  &__option
+    display: flex
+
+    img
+      width: 50px
+      flex-shrink: 1
+      margin-right: 30px
+
+    p
+      @include font($white, $regular, normal, 26px, 1.25)
+
+.btn_red
+  background: $red
+  @include transition()
+
+  &:hover
+    @include transform(scale(1.3))
+    @include transition()
+
+.btn_blue
+  background: $blue
+
+#homeBg
+  position: absolute
+  bottom: -50px
+  right: -25%
+  width: 840px
+
+#manBg
+  position: absolute
+  bottom: -15px
+  right: 60px
+  width: 490px
+
+#plantBg
+  position: absolute
+  width: 400px
+  bottom: -50px
+  left: 50%
+  @include transform(translateX(-50%))
+
+.s_advantages
+  background: $yellow
+
+.advantages
+  padding: 70px 0
+  display: flex
+  justify-content: space-around
+
+  &__item
+    width: 28%
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    img
+      height: 110px
+      margin-bottom: 20px
+
+    p
+      text-align: center
+      @include font($white, $bold, bold, $fontSize, 1.55)
+
+.secondTitle
+  @include font($textBlack, $bold, bold, 32px)
+  margin: 0 0 60px
+  text-align: center
+
+.s_services
+  padding: 70px 0
+
+.btn_small
+  @include font($white, $light, 300, 14px)
+  padding: 5px 20px
+  @include border-radius(15px)
+
+  &:hover
+    @include transform(scale(1.1))
+
+.services
+  &__list
+    display: flex
+    flex-wrap: wrap
+
+  &__item
+    width: 50%
+    padding-right: 30px
+    display: flex
+    align-items: center
+    @include box-sizing()
+
+    img
+      width: 140px
+      flex-shrink: 1
+
+    &__content
+      &__title
+        text-decoration: none
+        @include font($textBlack, $bold, bold, $fontSize, 1.55)
+
+      &__price
+        margin: 10px 0
+
+        &_new
+          @include font($textBlack, $bold, bold, $fontSize, 1.55)
+
+        &_old
+          @include font($textBlack, $regular, normal, 16px, 1.55)
+          text-decoration: line-through
+
+.s_call
+  background: $greenBg
+  padding: 50px 0
+
+.call
+  text-align: center
+
+  &__title
+    @include font($white, $bold, bold, 32px, 1.55)
+
+  &__phone
+    @include font($white, $bold, bold, 72px, 1)
+    margin-bottom: 60px
+    text-decoration: none
+    display: inline-block
+
+  &__btns
+    .btn:first-child
+      margin-right: 20px
+
+    .btn
+      padding: 20px 50px
+
+
+@keyframes light
+  100%
+    -webkit-transform: translateX(200%)
+    transform: translateX(200%)
+
+.btn_animate
+  -webkit-animation-name: light
+  -moz-animation-name: light
+  -o-animation-name: light
+  animation-name: light
+  position: absolute
+  top: 0
+  left: -100%
+  width: 100%
+  height: 100%
+  -webkit-animation-duration: 4s
+  animation-duration: 4s
+  -webkit-animation-timing-function: ease
+  animation-timing-function: ease
+  -webkit-animation-iteration-count: infinite
+  animation-iteration-count: infinite
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(50%, rgba(255,255,255, 0.5)), to(rgba(255, 255, 255, 0)))
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255,255,255, 0.5) 50%, rgba(255, 255, 255, 0))
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255,255,255, 0.5) 50%, rgba(255, 255, 255, 0))
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255,255,255, 0.5) 50%, rgba(255, 255, 255, 0))
+
+.bnt_noHover:hover
+  @include transform(none)
+
+.s_problems
+  padding: 70px 0
+
+.problems
+  &__list
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+    &__item
+      width: 33.3%
+      position: relative
+      text-align: center
+
+      &:hover
+        img
+          @include transform(scale(1.05))
+          @include transition()
+
+      img
+        height: 300px
+        @include transition()
+
+      p
+        @include font($white, $bold, bold, 22px, 1.35)
+        width: 290px
+        top: 60%
+        left: 50%
+        @include transform(translateX(-50%))
+        position: absolute
+
+.s_whyUs
+  margin-bottom: 70px
+
+.whyUs
+  .secondTitle
+    font-size: 48px
+
+  &__list
+    margin: 0
+    padding: 0
+    list-style: none
+    display: flex
+    justify-content: space-between
+
+    li
+      width: 30%
+      position: relative
+
+    &__title
+      padding-top: 60px
+      @include font($textBlack, $bold, bold, 22px, 1.35)
+      margin-bottom: 10px
+
+    p
+      @include font($darkGrey, $regular, normal, 22px, 1.35)
+
+    &__number
+      opacity: 0.6
+      @include font($yellow, sans-serif, bold, 200px, 150px)
+      position: absolute
+      top: 0
+      left: 50%
+      z-index: -1
+      @include transform(translateX(-50%))
+
+.near
+  .secondTitle
+    font-size: 48px
+    margin-bottom: 50px
+
+  &__slider
+    &__item
+      &__content
+        padding: 20px
+
+      &__name
+        @include font($textBlack, $bold, bold, $fontSize)
+        margin-bottom: 10px
+
+      &__address
+        @include font($textBlack, $regular, normal, 16px, 1.55)
+        margin-bottom: 10px
+
+      &__star
+        @include font($textBlack, $light, 300, 16px, 1.55)
+
+        span
+          font-size: 22px
+          color: $yellow
+          margin-right: 10px
+
+      ul
+        margin: 0
+        padding-left: 25px
+        color: $yellow
+
+        span
+          @include font($textBlack, $light, 300, 16px, 1.55)
+
+.s_callback
+  background: $greenBg
+
+.callback
+  padding-top: 60px
+  padding-bottom: 70px
+
+  .innerTitle
+    text-align: center
+    margin-bottom: 300px
+
+  &__form
+    background: $white
+    padding: 30px
+
+    .secondTitle
+      text-align: left
+      margin-bottom: 10px
+
+//@import "hamburger"
+
+/* RESPONSIVE */
+@import "responsive"
