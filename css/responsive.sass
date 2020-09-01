@@ -1,4 +1,119 @@
 @import "variables"
 @import "prefixes"
 
+@media only screen and (max-width: 1300px)
+  .near__slider .slick-next
+    right: 10px
+
+  .near__slider .slick-prev
+    left: 10px
+
 @media only screen and (max-width: 1200px)
+  .problems__list__item img
+    width: 95%
+    height: auto
+
+  .callback .innerTitle
+    margin-bottom: 100px
+
+@media only screen and (max-width: 1000px)
+  .problems__list__item
+    width: 50%
+
+  .header_top
+    flex-direction: column
+
+    .header__contacts
+      text-align: center
+
+    .header__title
+      margin: 20px 0
+
+  #homeBg, #plantBg
+    display: none
+
+  #manBg
+    right: -60px
+
+@media only screen and (max-width: 767px)
+  .header_fixed
+    .header__title
+      display: none
+
+  .services__list
+    justify-content: center
+
+  .services__item
+    width: 100%
+    max-width: 500px
+
+  #manBg
+    display: none
+
+  .firstScreen_static
+    margin: 0 auto
+
+  .advantages
+    flex-direction: column
+    align-items: center
+
+    img
+      margin-bottom: 0
+
+  .call__phone
+    font-size: 35px
+
+  .whyUs__list
+    flex-wrap: wrap
+
+    li
+      width: 100%
+
+  .callback__bg
+    display: none
+
+  .callback__form
+    width: 100%
+
+  .innerTitle
+    font-size: 30px !important
+
+  .secondTitle
+    font-size: 25px !important
+
+@media only screen and (max-width: 640px)
+  .header_bottom
+    flex-direction: column
+
+  .header__nav a
+    margin-bottom: 20px
+    margin-right: 0
+
+  .footer
+    flex-direction: column
+    padding-bottom: 0
+
+    &__column
+      margin: 0 0 40px
+
+  .problems__list__item
+    width: 100%
+
+    img
+      width: 100%
+
+  .problems__list__item p
+    width: 90%
+    top: 55%
+    font-size: 18px
+
+  .call__phone
+    font-size: 25px
+
+  .call__btns .btn_red
+    @include box-sizing()
+    margin-right: 0
+    width: 100%
+
+  .callback .innerTitle
+    margin-bottom: 40px
