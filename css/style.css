@@ -1183,7 +1183,7 @@ div, div:focus, div:active {
   display: flex;
   justify-content: space-between; }
 .promotions__item {
-  width: 45%;
+  width: 48%;
   display: flex;
   flex-direction: column;
   justify-content: center;
