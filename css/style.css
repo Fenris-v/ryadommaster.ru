@@ -1179,15 +1179,13 @@ div, div:focus, div:active {
   margin-bottom: 70px;
   padding-top: 70px; }
 
+.promotions .slick-list {
+  margin: 0 -20px; }
 .promotions__items {
-  display: flex;
-  justify-content: space-between; }
+  position: relative; }
 .promotions__item {
-  width: 48%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  text-align: center;
+  margin: 0 20px; }
   .promotions__item img {
     margin-bottom: 50px; }
   .promotions__item .btn_red:hover {
@@ -1196,6 +1194,33 @@ div, div:focus, div:active {
     -o-transform: none;
     -webkit-transform: none;
     transform: none; }
+.promotions .slick-prev, .promotions .slick-next {
+  position: absolute;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1;
+  border: none;
+  background: #000000;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%; }
+  .promotions .slick-prev:focus, .promotions .slick-prev:active, .promotions .slick-next:focus, .promotions .slick-next:active {
+    outline: none; }
+  .promotions .slick-prev svg, .promotions .slick-next svg {
+    width: 20px; }
+.promotions .slick-prev {
+  left: -60px;
+  -moz-transform: translateY(-50%) rotate(180deg);
+  -ms-transform: translateY(-50%) rotate(180deg);
+  -o-transform: translateY(-50%) rotate(180deg);
+  -webkit-transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%) rotate(180deg); }
+.promotions .slick-next {
+  right: -60px; }
 
 #acceptRules_modal_promotions, #acceptRules_modal_promotions2 {
   width: auto; }
@@ -1316,16 +1341,11 @@ div, div:focus, div:active {
   .callback .innerTitle {
     margin-bottom: 40px; } }
 /* PROMOTIONS 22.09.2020 */
-@media only screen and (max-width: 1000px) {
-  .promotions__item {
-    width: 48%; } }
-@media only screen and (max-width: 767px) {
-  .promotions__items {
-    flex-wrap: wrap; }
+@media only screen and (max-width: 1300px) {
+  .promotions .slick-next {
+    right: 10px; }
 
-  .promotions__item {
-    width: 100%; }
-    .promotions__item:first-child {
-      margin-bottom: 50px; } }
+  .promotions .slick-prev {
+    left: 10px; } }
 
 /*# sourceMappingURL=style.css.map */

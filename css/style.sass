@@ -671,22 +671,43 @@ div, div:focus, div:active
   padding-top: 70px
 
 .promotions
+  .slick-list
+    margin: 0 -20px
+
   &__items
-    display: flex
-    justify-content: space-between
+    position: relative
 
   &__item
-    width: 48%
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
+    text-align: center
+    margin: 0 20px
 
     img
       margin-bottom: 50px
 
     .btn_red:hover
       @include transform(none)
+
+  .slick-prev, .slick-next
+    position: absolute
+    top: 50%
+    @include transform(translateY(-50%))
+    z-index: 1
+    border: none
+    background: $textBlack
+    @include border-radius()
+
+    &:focus, &:active
+      outline: none
+
+    svg
+      width: 20px
+
+  .slick-prev
+      left: -60px
+      @include transform(translateY(-50%) rotate(180deg))
+
+  .slick-next
+    right: -60px
 
 #acceptRules_modal_promotions, #acceptRules_modal_promotions2
   width: auto
