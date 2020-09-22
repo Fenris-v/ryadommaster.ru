@@ -665,5 +665,35 @@ div, div:focus, div:active
 #acceptRules_call
   width: auto
 
+/* PROMOTION 22.09.2020 */
+.s_promotions
+  margin-bottom: 70px
+  padding-top: 70px
+
+.promotions
+  &__items
+    display: flex
+    justify-content: space-between
+
+  &__item
+    width: 45%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    img
+      margin-bottom: 50px
+
+    .btn_red:hover
+      @include transform(none)
+
+#acceptRules_modal_promotions, #acceptRules_modal_promotions2
+  width: auto
+
+.promotions__item__content
+  @include font($textBlack, $regular, normal, $fontSize, 1.55)
+
+
 /* RESPONSIVE */
 @import "responsive"

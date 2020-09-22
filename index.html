@@ -105,6 +105,25 @@
     </div>
 </section>
 
+<section class="s_promotions">
+    <div class="wrapper">
+        <div class="promotions">
+            <h2 class="secondTitle">Участвуйте в наших акциях</h2>
+            <div class="promotions__items">
+                <div class="promotions__item">
+                    <img src="images/promotion.svg" alt="promotion">
+                    <a href="#modalPromotions" data-fancybox-modal class="btn btn_red">Заказать</a>
+                </div>
+
+                <div class="promotions__item">
+                    <img src="images/promotion2.svg" alt="promotion">
+                    <a href="#modalPromotions2" data-fancybox-modal class="btn btn_red">Заказать</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="s_advantages">
     <div class="wrapper">
         <div class="advantages">
@@ -537,6 +556,70 @@
                     <label for="acceptRules_modal">Согласен с условиями обработки данных</label>
                     <br>
                     <input checked id="acceptRules_modal" name="acceptRules" type="checkbox">
+                </li>
+                <li>
+                    <input class="btn btn_red bnt_noHover" type="submit" value="Оставить заявку">
+                </li>
+            </ul>
+        </form>
+    </div>
+</div>
+
+<div id="modalPromotions" class="modal modal-success">
+    <img class="modalTitleImage" src="images/promotion.svg" alt="icon">
+    <div class="modal-success__title">Закажите уборку квартиры после ремонта</div>
+    <div class="services__item__content__price">
+        <span class="promotions__item__content">и получите мойку окон в подарок</span>
+    </div>
+    <div class="callback__form">
+        <form action="/" method="post">
+            <ul>
+                <li>
+                    <label for="name_modal_promotions"></label>
+                    <input name="name" id="name_modal_promotions" type="text" placeholder="Имя">
+                </li>
+                <li>
+                    <label for="phone_modal_promotions"></label>
+                    <input name="phone" id="phone_modal_promotions" type="text" placeholder="+7 (999) 999-99-99">
+                </li>
+                <li>
+                    <label for="square_modal_promotions"></label>
+                    <input name="phone" id="square_modal_promotions" type="text" placeholder="Площадь квартиры">
+                </li>
+                <li>
+                    <label for="acceptRules_modal_promotions">Согласен с условиями обработки данных</label>
+                    <br>
+                    <input checked id="acceptRules_modal_promotions" name="acceptRules" type="checkbox">
+                </li>
+                <li>
+                    <input class="btn btn_red bnt_noHover" type="submit" value="Оставить заявку">
+                </li>
+            </ul>
+        </form>
+    </div>
+</div>
+
+<div id="modalPromotions2" class="modal modal-success">
+    <img class="modalTitleImage" src="images/promotion.svg" alt="icon">
+    <div class="modal-success__title">Закажите ремонт бытовой техники</div>
+    <div class="services__item__content__price">
+        <span class="promotions__item__content">весь сентябрь 2500 рублей</span>
+    </div>
+    <div class="callback__form">
+        <form action="/" method="post">
+            <ul>
+                <li>
+                    <label for="name_modal_promotions2"></label>
+                    <input name="name" id="name_modal_promotions2" type="text" placeholder="Имя">
+                </li>
+                <li>
+                    <label for="phone_modal_promotions2"></label>
+                    <input name="phone" id="phone_modal_promotions2" type="text" placeholder="+7 (999) 999-99-99">
+                </li>
+                <li>
+                    <label for="acceptRules_modal_promotions2">Согласен с условиями обработки данных</label>
+                    <br>
+                    <input checked id="acceptRules_modal_promotions2" name="acceptRules" type="checkbox">
                 </li>
                 <li>
                     <input class="btn btn_red bnt_noHover" type="submit" value="Оставить заявку">

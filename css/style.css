@@ -1174,31 +1174,40 @@ div, div:focus, div:active {
 #acceptRules_call {
   width: auto; }
 
+/* PROMOTION 22.09.2020 */
+.s_promotions {
+  margin-bottom: 70px;
+  padding-top: 70px; }
+
+.promotions__items {
+  display: flex;
+  justify-content: space-between; }
+.promotions__item {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .promotions__item img {
+    margin-bottom: 50px; }
+  .promotions__item .btn_red:hover {
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    -webkit-transform: none;
+    transform: none; }
+
+#acceptRules_modal_promotions, #acceptRules_modal_promotions2 {
+  width: auto; }
+
+.promotions__item__content {
+  font-size: 18px;
+  font-weight: normal;
+  font-family: Roboto, sans-serif;
+  color: #000000;
+  line-height: 1.55; }
+
 /* RESPONSIVE */
-@font-face {
-  font-family: Roboto;
-  src: url(../fonts/Roboto-Regular.ttf); }
-@font-face {
-  font-family: RobotoBold;
-  src: url(../fonts/Roboto-Bold.ttf); }
-@font-face {
-  font-family: Arial;
-  src: url(../fonts/ArialUnicodeMS.ttf); }
-@font-face {
-  font-family: RobotoLight;
-  src: url(../fonts/Roboto-Light.ttf); }
-@font-face {
-  font-family: Roboto;
-  src: url(../fonts/Roboto-Regular.ttf); }
-@font-face {
-  font-family: RobotoBold;
-  src: url(../fonts/Roboto-Bold.ttf); }
-@font-face {
-  font-family: Arial;
-  src: url(../fonts/ArialUnicodeMS.ttf); }
-@font-face {
-  font-family: RobotoLight;
-  src: url(../fonts/Roboto-Light.ttf); }
 @media only screen and (max-width: 1300px) {
   .near__slider .slick-next {
     right: 10px; }
@@ -1306,5 +1315,17 @@ div, div:focus, div:active {
 
   .callback .innerTitle {
     margin-bottom: 40px; } }
+/* PROMOTIONS 22.09.2020 */
+@media only screen and (max-width: 1000px) {
+  .promotions__item {
+    width: 48%; } }
+@media only screen and (max-width: 767px) {
+  .promotions__items {
+    flex-wrap: wrap; }
+
+  .promotions__item {
+    width: 100%; }
+    .promotions__item:first-child {
+      margin-bottom: 50px; } }
 
 /*# sourceMappingURL=style.css.map */
