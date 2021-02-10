@@ -1,0 +1,167 @@
+@import "prefixes"
+@import "variables"
+
+.s_needHelp
+  margin-bottom: 100px
+
+.needHelp
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+  ul
+    list-style: none
+
+  &_half
+    position: relative
+    width: 50%
+
+    &__list
+      &_left
+        padding-right: 50px
+
+        li
+          @include font($textBlack, $bold, bold, 20px, 1.4)
+
+          &:not(:last-child)
+            margin-bottom: 30px
+
+      &_right
+        position: relative
+        z-index: 3
+        padding: 60px
+        @include box-sizing()
+
+        li
+          @include font($white, $bold, bold, 28px, 1.4)
+
+          &:not(:last-child)
+            margin-bottom: 30px
+
+    &__bg
+      background: url("../images/SmilingFamily_iStock.webp")
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      z-index: 1
+
+      &_yellow
+        background: #efa900
+        opacity: 0.9
+
+.s_difference
+
+.difference
+  .secondTitle
+    font-size: 48px
+
+  &_flex
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+    .secondTitle
+      font-size: 28px
+
+  &_half
+    width: 50%
+    display: flex
+    align-items: center
+    flex-direction: column
+    position: relative
+    margin-bottom: 100px
+
+    &.green
+      .secondTitle
+        color: #3bc13b
+
+  &__img
+    width: 350px
+    height: 350px
+    @include object-fit()
+    @include border-radius()
+
+  &__msg
+    position: absolute
+
+    &.first
+      width: 260px
+      top: 20%
+      left: 58%
+
+    &.second
+      width: 300px
+      top: 68%
+      left: 48%
+
+    &.third
+      width: 260px
+      top: 45%
+      left: 8%
+
+    &.fourth
+      width: 260px
+      top: 64%
+      left: 28%
+
+    &.fifth
+      width: 300px
+      top: 66%
+      left: 45%
+
+.prices
+  margin-bottom: 100px
+
+.prices
+  text-align: center
+
+  .secondTitle
+    max-width: 700px
+    margin: 0 auto 50px
+    line-height: 1.4
+
+  .btn
+    padding: 20px 50px
+
+.s_guarantee
+  margin-bottom: 100px
+
+.guarantee
+  .secondTitle
+    font-size: 38px
+    text-align: left
+    max-width: 500px
+
+  &_flex
+    display: flex
+    justify-content: center
+    align-items: flex-start
+
+    &:not(:last-child)
+      margin-bottom: 100px
+
+    &_left
+      width: 260px
+      margin-right: 100px
+      flex-shrink: 0
+
+      img
+        width: 100%
+
+    &_right
+      p
+        font-size: 20px
+        line-height: 1.4
+        max-width: 500px
+
+        &:not(:last-child)
+          margin: 0 0 30px
+
+    &.reverse
+      flex-direction: row-reverse
+
+      .guarantee_flex_left
+        margin-left: 100px
+        margin-right: 0
