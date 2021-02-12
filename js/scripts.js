@@ -64,6 +64,28 @@ $(document).ready(() => {
     });
 
     /**
+     * SLICK 12.02.2021
+     */
+    $('.feedback__slider').slick({
+        infinite: true,
+        arrows: true,
+        dots: true,
+        prevArrow: '<button type="button" class="slick-prev"><svg style="display: block" viewBox="0 0 17.3 33" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <desc>Left</desc> <polyline fill="none" stroke="#222" stroke-linejoin="butt" stroke-linecap="butt" stroke-width="1" points="0.5,0.5 16.5,16.5 0.5,32.5"></polyline> </svg></button>',
+        nextArrow: '<button type="button" class="slick-next"><svg style="display: block" viewBox="0 0 17.3 33" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <desc>Right</desc> <polyline fill="none" stroke="#222" stroke-linejoin="butt" stroke-linecap="butt" stroke-width="1" points="0.5,0.5 16.5,16.5 0.5,32.5"></polyline> </svg></button>',
+        slidesToShow: 1,
+        autoplay: true,
+        centerMode: true,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    arrows: false
+                }
+            }
+        ]
+    });
+
+    /**
      * ANCHOR
      */
     $('.anchorLink').on('click', (e) => {

@@ -162,4 +162,101 @@
       margin-left: 100px;
       margin-right: 0; }
 
+.s_feedback {
+  margin-bottom: 100px; }
+
+.feedback .secondTitle {
+  font-size: 48px;
+  margin-bottom: 100px; }
+.feedback .slick-slide {
+  margin: 0 50px;
+  max-height: 500px; }
+.feedback .slick-list {
+  width: 600px;
+  margin: 0 auto 150px; }
+.feedback .slick-arrow {
+  border: none;
+  background: none;
+  width: 17px;
+  height: 33px;
+  position: absolute;
+  padding: 0;
+  top: 50%;
+  transform: translateY(-50%); }
+.feedback .slick-next {
+  right: 0; }
+.feedback .slick-prev {
+  left: 0;
+  transform: translateY(-50%) rotate(180deg); }
+.feedback .slick-dots {
+  position: absolute;
+  bottom: -50px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; }
+  .feedback .slick-dots li:not(:last-child) {
+    margin-right: 10px; }
+  .feedback .slick-dots li button {
+    font-size: 0;
+    border: none;
+    padding: 0;
+    background: #eee;
+    width: 8px;
+    height: 8px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%; }
+  .feedback .slick-dots li.slick-active button, .feedback .slick-dots li button:hover {
+    background: #222; }
+
+.slider__title {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: RobotoBold, sans-serif;
+  color: #000000;
+  line-height: 1; }
+
+.slick-slide, .slick-slide:focus, button:focus {
+  outline: none; }
+
+@media only screen and (max-width: 1000px) {
+  .needHelp {
+    flex-wrap: wrap; }
+    .needHelp_half {
+      width: 100%; }
+      .needHelp_half:first-child {
+        margin-bottom: 50px; }
+
+  .difference__msg {
+    position: static;
+    margin-top: 40px; } }
+@media only screen and (max-width: 767px) {
+  .difference_half {
+    width: 100%; }
+
+  .guarantee_flex {
+    flex-direction: column; }
+    .guarantee_flex.reverse {
+      flex-direction: column; }
+
+  .guarantee_flex_left {
+    margin: 0 0 40px; }
+
+  .guarantee_flex.reverse .guarantee_flex_left {
+    margin-left: 0; }
+
+  .guarantee_flex_left, .guarantee_flex_right {
+    width: 100%; }
+
+  .feedback .slick-list {
+    width: auto; }
+
+  .feedback .slick-slide {
+    margin: 20px; } }
+
 /*# sourceMappingURL=new-style.css.map */

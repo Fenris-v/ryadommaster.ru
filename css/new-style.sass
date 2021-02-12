@@ -165,3 +165,72 @@
       .guarantee_flex_left
         margin-left: 100px
         margin-right: 0
+
+.s_feedback
+  margin-bottom: 100px
+
+.feedback
+  .secondTitle
+    font-size: 48px
+    margin-bottom: 100px
+
+  .slick-slide
+    margin: 0 50px
+    max-height: 500px
+
+  .slick-list
+    width: 600px
+    margin: 0 auto 150px
+
+  .slick-arrow
+    border: none
+    background: none
+    width: 17px
+    height: 33px
+    position: absolute
+    padding: 0
+    top: 50%
+    transform: translateY(-50%)
+
+  .slick-next
+    right: 0
+
+  .slick-prev
+    left: 0
+    transform: translateY(-50%) rotate(180deg)
+
+  .slick-dots
+    position: absolute
+    bottom: -50px
+    display: flex
+    justify-content: center
+    list-style: none
+    padding: 0
+    margin: 0
+    width: 100%
+
+    li
+      &:not(:last-child)
+        margin-right: 10px
+
+      button
+        font-size: 0
+        border: none
+        padding: 0
+        background: #eee
+        width: 8px
+        height: 8px
+        @include border-radius()
+
+      &.slick-active button, button:hover
+        background: #222
+
+.slider__title
+  margin-bottom: 50px
+  text-align: center
+  @include font($textBlack, $bold, bold, 24px)
+
+.slick-slide, .slick-slide:focus, button:focus
+  outline: none
+
+@import "new-responsive"
