@@ -175,12 +175,15 @@
     margin-bottom: 100px
 
   .slick-slide
-    margin: 0 50px
+    margin: 0 100px
     max-height: 500px
 
   .slick-list
-    width: 600px
+    width: 800px
     margin: 0 auto 150px
+    overflow: visible
+    box-sizing: border-box
+    padding: 0
 
   .slick-arrow
     border: none
@@ -191,12 +194,13 @@
     padding: 0
     top: 50%
     transform: translateY(-50%)
+    z-index: 1
 
   .slick-next
-    right: 0
+    right: 150px
 
   .slick-prev
-    left: 0
+    left: 150px
     transform: translateY(-50%) rotate(180deg)
 
   .slick-dots
